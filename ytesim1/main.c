@@ -1,7 +1,16 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int main()
 {
-    printf("Hello World!\n");
-    return 0;
+    bool pizzaIsHealthy = true;
+    int temp;
+    printf("Do you believe in the power of pizza. 1 is true and 0 is false:");
+    scanf("%d", &temp);
+    pizzaIsHealthy = temp;
+
+    if(pizzaIsHealthy)
+    {
+        printf("Welcome to my pizza app\n");
+    }
 }
